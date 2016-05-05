@@ -52,7 +52,7 @@ public class C {
 	
 	public static String getOnlineVersion() throws Throwable
 	{
-		String link = ""; //TODO: Add project to Github
+		String link = "https://raw.githubusercontent.com/MinionDoesMC/Factions/master/src/configFile.json";
 		URL url = new URL(link);
 		HttpURLConnection http = (HttpURLConnection)url.openConnection();
 		http.setRequestProperty("User-Agen", "Mozilla/5.0 (Windows NT 5.1; rv:19.0) Gecko/20100101 Firefox/19.0");

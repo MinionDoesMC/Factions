@@ -29,6 +29,10 @@ public class Factions
 		C.loadData();
 		this.getServer().getConsoleSender().sendMessage("§2[Factions has loaded the necessary data]");
 		
+		if (Config.configData.getString("checkForUpdates").equalsIgnoreCase("true")) {
+			C.checkForUpdates();
+			Bukkit.getServer().getConsoleSender().sendMessage("§2[Factions has finished checking for updates]");
+		}
 		this.getServer().getConsoleSender().sendMessage("§2[Factions has been loaded!]");
 		
 	}
