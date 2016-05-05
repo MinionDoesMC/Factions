@@ -1,0 +1,8 @@
+name: Factions
+main: com.gmail.minionemails.Factions.Factions
+version: 0.8
+
+commands:
+    f:
+        description: Main command
+        usage: /f
